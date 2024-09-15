@@ -2,7 +2,7 @@ const errorElement = document.getElementById('error')
 
 async function fetchTodos() {
     try {
-        const response = await fetch('./todos')
+        const response = await fetch('../todos')
 
         if (response.redirected) {
             window.location.href = response.url
@@ -57,7 +57,7 @@ document.getElementById('add-todo').addEventListener('submit', async (event) => 
     errorElement.innerHTML = ''
 
     try {
-        const response = await fetch('./todos', {
+        const response = await fetch('../todos', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ document.getElementById('todo-items').addEventListener('click', async (event) =>
         const id = item.dataset.id
 
         try {
-            const response = await fetch(`./todos/${id}`, {
+            const response = await fetch(`../todos/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'

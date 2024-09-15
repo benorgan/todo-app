@@ -4,7 +4,7 @@ document.getElementById('register-form').addEventListener('submit', async (event
     const username = document.getElementById('register-username').value
     const password = document.getElementById('register-password').value
 
-    const response = await fetch('./auth/register', {
+    const response = await fetch('../auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -32,7 +32,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
     const username = document.getElementById('login-username').value
     const password = document.getElementById('login-password').value
 
-    const response = await fetch('./auth/login', {
+    const response = await fetch('../auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
