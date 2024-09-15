@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div id="register">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input id="register-username" placeholder="Username" type="text" required="required" />
+        <input id="register-password" placeholder="Password" type="password" required="required" />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+    <div id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input id="login-username" placeholder="Username" type="text" required="required" />
+        <input id="login-password" placeholder="Password" type="password" required="required" />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+    <div id="error">
+      <!-- Will be populated with errors -->
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>

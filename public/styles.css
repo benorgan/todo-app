@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #007bff;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+#error {
+    color: darkred;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#add-todo {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-todo input,
+#add-todo button {
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+#error {
+    color: darkred;
+}
+
+.todo-title {
+    font-weight: bold;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item button {
+    margin-left: 10px;
+}
+
+#add-todo {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-todo input,
+#add-todo textarea,
+#add-todo button {
+    margin-bottom: 10px;
+}
