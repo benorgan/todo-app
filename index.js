@@ -24,7 +24,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use(session({
-    secret: 'B1zshaoZ1jN28r80NKEhpOJ',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
 
 const start = async () => {
     try {
-        await mongoose.connect('mongodb+srv://dbuser:0kloyvH4KHGIUeZW@cluster0.euljz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        await mongoose.connect(process.env.MONGODB_URL)
 
         app.listen(port, () => {
             console.log(`Todo backend listening on ${port}`)
